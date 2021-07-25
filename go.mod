@@ -1,4 +1,4 @@
-module gavinelder/mdmdirector-client-go
+module github.com/gavinelder/mdmdirector-client-go
 
 go 1.16
 
