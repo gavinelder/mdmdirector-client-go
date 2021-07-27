@@ -1,3 +1,4 @@
+/*
 package types
 
 import (
@@ -29,3 +30,4 @@ type CertificateList struct {
 	Data       []byte `plist:"Data"`
 	IsIdentity bool   `plist:"IsIdentity"`
 }
+*/

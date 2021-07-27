@@ -1,3 +1,4 @@
+/*
 package types
 
 type DeviceFromMDM struct {
@@ -10,3 +11,4 @@ type DeviceFromMDM struct {
 type DevicesFromMDM struct {
 	Devices []DeviceFromMDM `json:"devices"`
 }
+*/

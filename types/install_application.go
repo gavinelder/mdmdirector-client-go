@@ -1,3 +1,4 @@
+/*
 package types
 
 import "github.com/google/uuid"
@@ -23,3 +24,4 @@ type ManifestURL struct {
 	URL           string `json:"url"`
 	BootstrapOnly bool   `json:"bootstrap_only"`
 }
+*/

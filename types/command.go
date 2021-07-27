@@ -1,3 +1,4 @@
+/*
 package types
 
 import (
@@ -36,3 +37,4 @@ type CommandResponse struct {
 		Command     CommandPayload
 	} `json:"payload"`
 }
+*/

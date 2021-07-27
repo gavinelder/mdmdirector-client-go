@@ -1,3 +1,4 @@
+/*
 package types
 
 type PostPayload struct {
@@ -20,3 +21,4 @@ type AcknowledgeEvent struct {
 	CommandUUID string            `json:"command_uuid"`
 	Status      string            `json:"status"`
 }
+*/

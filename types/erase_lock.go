@@ -1,3 +1,4 @@
+/*
 package types
 
 import (
@@ -19,3 +20,4 @@ type UnlockPin struct {
 	PinSet     time.Time
 	DeviceUDID string
 }
+*/

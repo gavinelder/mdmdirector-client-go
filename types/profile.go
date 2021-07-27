@@ -2,8 +2,6 @@ package types
 
 import (
 	"github.com/google/uuid"
-
-	"gorm.io/gorm"
 )
 
 // DeviceProfile (s) are profiles that are individual to the device.
@@ -20,15 +18,16 @@ type DeviceProfile struct {
 
 // SharedProfile (s) are profiles that go on every device.
 type SharedProfile struct {
-	ID                uuid.UUID `gorm:"primaryKey;type:uuid;default:uuid_generate_v4()"`
-	PayloadUUID       string
-	HashedPayloadUUID string
-	PayloadIdentifier string
-	MobileconfigData  []byte
-	MobileconfigHash  []byte
-	Installed         bool `gorm:"default:true"`
+	ID                uuid.UUID `json:"ID" gorm:"primaryKey;type:uuid;default:uuid_generate_v4()"`
+	PayloadUUID       string    `json:"PayloadUUID"`
+	HashedPayloadUUID string    `json:"HashedPayloadUUID"`
+	PayloadIdentifier string    `json:"PayloadIdentifier"`
+	MobileconfigData  []byte    `json:"MobileconfigData"`
+	MobileconfigHash  []byte    `json:"MobileconfigHash"`
+	Installed         bool      `json:"Installed" gorm:"default:true"`
 }
 
+/*
 // ProfilePayload - struct to unpack the payload sent to mdmdirector
 type ProfilePayload struct {
 	SerialNumbers []string `json:"serial_numbers,omitempty"`
@@ -93,3 +92,4 @@ func (profile *DeviceProfile) AfterUpdate(tx *gorm.DB) (err error) {
 	BumpDeviceLastUpdated(profile.DeviceUDID)
 	return nil
 }
+*/

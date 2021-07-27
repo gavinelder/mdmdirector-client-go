@@ -1,3 +1,4 @@
+/*
 package types
 
 type SecurityInfoData struct {
@@ -73,3 +74,4 @@ type SecureBootReducedSecurity struct {
 	AllowsUserKextApproval bool   `plist:"AllowsUserKextApproval"`
 	DeviceUDID             string `gorm:"primaryKey"`
 }
+*/

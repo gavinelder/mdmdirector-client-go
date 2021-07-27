@@ -1,3 +1,4 @@
+/*
 package types
 
 import "time"
@@ -118,3 +119,4 @@ type DeviceCommandPayload struct {
 	Metadata      bool     `json:"metadata"`
 	Pin           string   `json:"pin,omitempty"`
 }
+*/
