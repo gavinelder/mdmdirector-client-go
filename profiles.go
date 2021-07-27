@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/mdmdirector/mdmdirector/types"
+	"github.com/gavinelder/mdmdirector-client-go/types"
 )
 
 // GetSharedProfiles are profiles that go on every device.
