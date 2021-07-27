@@ -27,8 +27,8 @@ type SharedProfile struct {
 	Installed         bool      `json:"Installed" gorm:"default:true"`
 }
 
-/*
 // ProfilePayload - struct to unpack the payload sent to mdmdirector
+/*
 type ProfilePayload struct {
 	SerialNumbers []string `json:"serial_numbers,omitempty"`
 	DeviceUDIDs   []string `json:"udids,omitempty"`
@@ -37,6 +37,7 @@ type ProfilePayload struct {
 	Metadata      bool     `json:"metadata"`
 }
 
+/*
 type DeleteProfilePayload struct {
 	SerialNumbers []string                     `json:"serial_numbers,omitempty"`
 	DeviceUDIDs   []string                     `json:"udids,omitempty"`
