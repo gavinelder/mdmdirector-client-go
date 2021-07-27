@@ -1,5 +1,6 @@
-/*
 package types
+
+/*
 
 type SecurityInfoData struct {
 	SecurityInfo SecurityInfo

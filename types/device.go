@@ -1,5 +1,6 @@
-/*
 package types
+
+/*
 
 import "time"
 

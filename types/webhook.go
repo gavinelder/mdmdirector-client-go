@@ -1,5 +1,6 @@
-/*
 package types
+
+/*
 
 type PostPayload struct {
 	Topic            string            `json:"topic"`
