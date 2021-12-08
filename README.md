@@ -3,18 +3,32 @@
 ## Basic Usage
 
 ```
-	host := "https://mdmserver"
-	username := "mdmdirector"
-	password := "supersecret"
-	c, err := NewClient(&host, &username, &password)
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+
+	mdmdirector "github.com/gavinelder/mdmdirector-client-go"
+)
+
+func main() {
+	host := os.Getenv("MDMDIRECTOR_URL")
+	username := os.Getenv("MDMDIRECTOR_USER")
+	password := os.Getenv("MDMDIRECTOR_PASS")
+	c, err := mdmdirector.NewClient(&host, &username, &password)
 	if err != nil {
-		return err
+		log.Fatal(err)
 	}
 	sp, err := c.GetSharedProfiles()
 	if err != nil {
-		return err
+		log.Fatal(err)
 	}
-	return sp, nil
+	for _, profile := range *sp {
+		fmt.Println(profile.ID)
+	}
+}
 }
 ```
 
